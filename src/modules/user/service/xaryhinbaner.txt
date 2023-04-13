@@ -1,0 +1,58 @@
+// const queryRunner = AppDataSource.createQueryRunner()
+// await queryRunner.connect()
+// await queryRunner.startTransaction()
+
+ // acceptFriend.friends = [
+//     ...acceptFriend.friends,
+//     authUser
+// ]
+
+
+// 1 sarqel query-nerov
+// 2 news feed of friends 
+
+// const friend: any = await this.usersRepo.findOne({
+//     where: {
+//         id: authUser.id
+//     },
+//     relations: ['requests']
+// })
+
+// const acceptFriend: any = await this.usersRepo.findOne({
+//     where: { id: authUser.id },
+//     relations: ['friends', 'requests']
+// })
+// delete acceptFriend.password
+// delete authUser.password
+
+// const acceptFriend = await this.usersRepo
+//     .createQueryBuilder("user")
+//     .where("user.id = :id", { id: authUser.id })
+//     .leftJoinAndSelect("user.requests", "requests")
+//     .leftJoinAndSelect("user.friends", "friends")
+//     .getOne()
+
+// const requestedFriend = await this.usersRepo
+//     .createQueryBuilder("user")
+//     .where("user.id = :id", { id: useriD })
+//     .leftJoinAndSelect("user.requests", "requests")
+//     .leftJoinAndSelect("user.friends", "friends")
+//     .getOne()
+
+
+
+// const friend2: any = await this.usersRepo.findOne({
+//     where: {
+//         id: authUser.id
+//     },
+//     relations: ['friends']
+// })
+
+// friend2.friends = [
+//     ...friend2.friends,
+//     acceptFriend
+// ]
+
+// friend.requests = friend.requests.filter(e => e.id !== useriD)
+
+
